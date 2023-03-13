@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    background-color: #86A3B8;
+}
+
+header {
+    width: 70%;
+    height: 70%;
+    background: #fff;
+    box-shadow: 0px 0px 25px rgb(197, 197, 211);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+header .male, .cal,.female{
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header img {
+    width: 200px;
+}
+
+header .speed {
+    display: inline-block;
+    position: relative;
+    height: 57px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+header .speed .speedmeter {
+    width: 115px;
+    height: 115px;
+    border-top: 13px solid #000;
+    border-left: 13px solid #000;
+    border-right: 13px solid #fff;
+    border-bottom: 13px solid #fff;
+    border-radius: 100%;
+    transform: rotate(45deg);
+    display: flex;
+    box-shadow: inset 0px 0px 20px grey;
+    transition: all 5s;
+}
+
+header .speed .needle {
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    background: linear-gradient(45deg, transparent, #000);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    top: 15px;
+    left: 53px;
+    display: inline-block;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+    transition: all 5s;
+}
+
+header .speed h3 {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+header input[type="submit"]{
+    margin: 15px 0px 0px 40px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transform: .5s linear;
+}
+
+header input[type="submit"]:hover{
+    background: grey;
+}
+
+header .cal .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+header .cal .card h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header .cal .card h4 span{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+header .cal .card input{
+    border: 3px solid grey;
+    outline: none;
+    width: 90px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 20px gray;
+
+}
+
+header .cal .btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .cal .btns button {
+    width: 100px;
+    padding: 10px 0px;
+    margin: 0px 5px;
+    background: aqua;
+    border: none;
+    outline:  none;
+    font-family: 'poppins',sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 1s linear;
+}
+
+header .cal .btns button:nth-child(2) {
+    background: #000;
+    color: #fff;
+}
+
+header .cal .btns button:nth-child(3) {
+    background: aqua;
+
+}
+
